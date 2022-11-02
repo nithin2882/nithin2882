@@ -1,5 +1,5 @@
 ### Hi there 👋
-I'm Nithin Rajan currently pursuing my Bachelor's degree as final year in the field of Mechatronics from Rajalakshmi Engineering College, Chennai. I'm am a person who love to explore different fields and technologies. when I'm not coding👨🏼‍💻 I'm either working out💪🏼 or talking to my favorite persons.I enjoy writing technical blogs and really enjoy UI and design in general.
+I'm Nithin Rajan currently pursuing my Bachelor's degree as final year in the field of Mechatronics from Rajalakshmi Engineering College, Chennai. I'm am a person who love to explore different fields and technologies. when I'm not coding👨🏼‍💻 I'm either working out💪🏼 or talking to my favorite persons.I enjoy writing technical blogs and really enjoy working with UI and design in general.
 
 <!--
 **nithin2882/nithin2882** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
