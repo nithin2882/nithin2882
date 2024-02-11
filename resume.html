@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .header {
+        background-color: #373d48;
+        color: white;
+        font-family: Century Gothic, sans-serif;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .header-text {
+        font-size: 36px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .sub-header-text {
+        font-size: 24px;
+        font-weight: normal;
+        width: 100%;
+    }
+
+    .left-body {
+        background-color: #ffffff;
+        padding: 0 20px 30px 30px;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+
+    .right-body {
+        background-color: #f4f4f4;
+        padding: 0 30px 30px 20px;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .separator {
+        width: 100%;
+        height: 0.75px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        background-color: #e7e7e7;
+    }
+
+    .body-header {
+        color: 373d48;
+        font-family: Century Gothic, Medium, sans-serif;
+        font-size: 21px;
+        font-weight: bold;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .body-sub-header {
+        color: #373d48;
+        font-family: Century Gothic, Medium, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    label,
+    li,
+    a {
+        font-family: Century Gothic, Medium, sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    a:hover {
+        border-radius: 5px;
+        background-color: #373d48;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 3px 5px 3px 5px;
+        margin-left: -3px;
+    }
+
+    .highlight-filled {
+        border-radius: 5px;
+        background-color: #373d48;
+        color: white;
+        font-weight: normal;
+        padding: 5px 7px 5px 7px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .highlight-outline {
+        border: 2px solid #373d48;
+        border-radius: 5px;
+        /* background-color: white; */
+        color: #373d48;
+        padding: 3px 5px 3px 5px;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .icon {
+        font-size: 18px;
+        color: #373d48;
+        padding: 10px 20px 10px 0px;
+    }
+
+    .no-padding {
+        padding: 0px;
+    }
+
+    .pdf-outline {
+        border: 2px solid red;
+        border-radius: 5px;
+        /* background-color: white; */
+        color: red;
+        padding: 3px 5px 3px 5px;
+        font-weight: bold;
+    }
+
+    .icon {
+        padding: 10px 5px 10px 0px;
+    }
+</style>
+
+<body>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <div class="header">
+        <div class="container-fluid no-gutter">
+            <div class="row">
+                <div class="col-8 no-padding">
+                    <label class="header-text">Nithin Rajan N</label>
+                    <label class="sub-header-text">Fresher Software Engineer</label>
+                </div>
+                <div class="col-4 text-right center align-self-center">
+                    <a class="pdf-outline" href="./NithinRajanResume.pdf" download target="_blank" rel="noopener noreferrer">
+                        PDF <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Data -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="left-body">
+                <!-- Objective -->
+                <div>
+                    <label class="pt-3">
+                        A highly adaptable and motivated software engineer with a keen eye for detail, disciplined
+                        approach to coding and debugging, and proven capabilities in development.
+                        Seeking to leverage former experience and unrivaled enthusiasm to build exceptional software and
+                        take on innovative projects for a company that values excellence and forward-thinking.
+                    </label>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <label class="body-header">Education</label>
+                    <div class="separator"></div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <label class="body-sub-header">Jul 2019 - May 2023</label>
+                            </div>
+                            <div class="col-8">
+                                <label class="body-sub-header">B.E. (Mechatronics)</label>
+                                <label class="body-sub-header">CGPA: 8.28/10</label>
+                                <label>Rajalakshmi Engineering College, Chennai, Tamil Nadu.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work History -->
+                <div>
+                    <label class="body-header">Internship History</label>
+                    <div class="separator"></div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <label class="body-sub-header">Mar 2023 - Jul 2023 · 4 mos</label>
+                            </div>
+                            <div class="col-8">
+                                <label class="body-sub-header">Intern</label><br>
+                                <label>Proserv India Oil and Gas Solutions LLP, Chennai, Tamil Nadu.</label><br>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <label class="body-sub-header">Jan 2022 - Feb 2022 · 1 mon</label>
+                            </div>
+                            <div class="col-8">
+                                <label class="body-sub-header">Web Developer Intern</label><br>
+                                <label>Oasis Infobyte, Chennai, Tamil Nadu.</label><br>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <label class="body-sub-header">Oct 2021 - Nov 2021 · 1 mon</label>
+                            </div>
+                            <div class="col-8">
+                                <label class="body-sub-header">Front End Intern</label><br>
+                                <label>Sparks Foundation, Chennai, Tamil Nadu.</label><br>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <label class="body-sub-header">Nov 2021 - Dec 2021 · 1 mon</label>
+                            </div>
+                            <div class="col-8">
+                                <label class="body-sub-header">Robotics Intern</label><br>
+                                <label>Space Academy, Chennai, Tamil Nadu.</label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div>
+                    <label class="body-header">Profession/Internship Experience</label>
+                    <div class="separator"></div>
+
+                    <label class="body-sub-header">Proserv India Oil and Gas Solutions LLP:</label>
+
+                    <div class="ml-3">
+                        <div>
+                            <label class="body-sub-header">Contribution and Responsibilities:</label>
+                            <ul>
+                                <li>Drafting both firm and budgetary client proposals.</li>
+                                <li>Drafting engineering documents like BOM, Datasheets, Document controller activities.
+                                </li>
+                                <li>Worked on End to End projects from client meeting to handover of the package.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <label class="body-sub-header">Oasis Infobyte:</label>
+
+                    <div class="ml-3">
+                        <div>
+                            <label class="body-sub-header">Technologies used:</label>
+
+                            <label class="highlight-outline">HTML</label>
+                            <label class="highlight-outline">CSS</label>
+                            <label class="highlight-outline">Bootstrap</label>
+                            <label class="highlight-outline">Javascript</label>
+                        </div>
+
+                        <div>
+                            <label class="body-sub-header">Contribution and Responsibilities:</label>
+                            <ul>
+                                <li>Build modern applications using HTML, CSS, Javascript with the help of frameworks
+                                    like Bootstrap CSS and
+                                    hosted the website at github.io</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <label class="body-sub-header">Sparks Foundation:</label>
+
+                    <div class="ml-3">
+                        <div>
+                            <label class="body-sub-header">Technologies used:</label>
+
+                            <label class="highlight-outline">HTML</label>
+                            <label class="highlight-outline">CSS</label>
+                            <label class="highlight-outline">Bootstrap</label>
+                            <label class="highlight-outline">Javascript</label>
+                        </div>
+
+                        <div>
+                            <label class="body-sub-header">Contribution and Responsibilities:</label>
+                            <ul>
+                                <li>Designed and developed a donation website for an NGO, the site enabled with the
+                                    payment gateway integation
+                                    with Razorpay. Users can select the amount to be paid and the payment type e.g
+                                    credit card, Paypal.</li>
+                                <li>Once the payment is done and invoice will be generated and email will be sent to the
+                                    user for the payment
+                                    received.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <label class="body-sub-header">Space Academy:</label>
+
+                    <div class="ml-3">
+                        <div>
+                            <label class="body-sub-header">Contribution and Responsibilities:</label>
+                            <ul>
+                                <li>Accomplished day to day responsibilities and provided innovative solutions for line
+                                    following robot and obstacle
+                                    detection and collision avoidance using online simulator.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Awards and Acheivements -->
+                <div>
+                    <div class="container-fluid no-padding">
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="body-header">Certifications and Acheivements</label>
+                                <div class="separator"></div>
+                                <ul>
+                                    <li>Full Stack Developer - Devtown - Duration - 6 Months</li>
+                                    <li>TCS iON Career Edge - Young Professional</li>
+                                    <li>ServiceNow - Certified System Administator</li>
+                                    <li>Product Design and Manufacturing - NPTEL</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <label class="body-header">Workshop and Training</label>
+                                <div class="separator"></div>
+                                <label>
+                                    Catalyst Serverless : Successfully attended and participated in
+                                    "Catalyst Serverless", two day workshop on
+                                    building cutting-edge cloud applications held by Team Catalyst at Zoho
+                                    Campus, Chennai.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-body">
+                <!-- Contact -->
+                <div>
+                    <label class="body-header">Contact</label>
+                    <div class="separator"></div>
+
+                    <div class="mt-1">
+                        <i class="fa fa-map-marker icon"></i>
+                        <label>Chennai, Tamil Nadu</label>
+                    </div>
+
+                    <div class="mt-1">
+                        <i class="fa fa-phone icon"></i>
+                        <label>7358509301</label>
+                    </div>
+
+                    <div class="mt-1">
+                        <i class="fa fa-envelope icon"></i>
+                        <label>nithinrajan02149@gmail.com</label>
+                    </div>
+
+                    <div class="mt-1">
+                        <i class="fa fa-github-square icon" aria-hidden="true"></i>
+                        <a href="https://github.com/nithin2882" target="_blank" rel="noopener noreferrer">
+                            <label>Github Repo</label>
+                        </a>
+                    </div>
+
+                    <div class="mt-1">
+                        <i class="fa fa-linkedin-square icon" aria-hidden="true"></i>
+                        <a href="https://www.linkedin.com/in/nithin-rajan-15b478212/" target="_blank"
+                            rel="noopener noreferrer">
+                            <label>Linkedin Profile</label>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <label class="body-header">Skills</label>
+                    <div class="separator"></div>
+
+                    <div>
+                        <label class="body-sub-header">Languages:</label>
+                        <div>
+                            <label class="highlight-filled">Java</label>
+                            <label class="highlight-filled">SQL</label>
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <label class="body-sub-header">Other:</label>
+                        <div>
+                            <label class="highlight-filled">DS</label>
+                            <label class="highlight-filled">Algorithms</label>
+                            <label class="highlight-filled">OOPs</label>
+                        </div>
+                    </div>
+
+                    <div class=" mt-2">
+                        <label class="body-sub-header">Frameworks:</label>
+                        <div>
+                            <label class="highlight-filled">Spring Boot</label>
+                            <label class="highlight-filled">Hibernate</label>
+                        </div>
+                    </div>
+
+                    <div class=" mt-2">
+                        <label class="body-sub-header">Operating Systems:</label>
+                        <div>
+                            <label class="highlight-filled">Windows</label>
+                            <label class="highlight-filled">Linux</label>
+                        </div>
+                    </div>
+
+                    <div class=" mt-2">
+                        <label class="body-sub-header">Build Management:</label>
+                        <div>
+                            <label class="highlight-filled">Maven</label>
+                        </div>
+                    </div>
+
+                    <div class=" mt-2">
+                        <label class="body-sub-header">Version Management:</label>
+                        <div>
+                            <label class="highlight-filled">Git</label>
+                        </div>
+                    </div>
+
+                    <div class=" mt-2">
+                        <label class="body-sub-header">Databases:</label>
+                        <div>
+                            <label class="highlight-filled">MySQL</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <label class="body-header">Languages</label>
+                    <div class="separator"></div>
+
+                    <div>
+                        <label class="highlight-outline">English</label>
+                        <label class="highlight-outline">Tamil</label>
+                        <label class="highlight-outline">Telugu</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
